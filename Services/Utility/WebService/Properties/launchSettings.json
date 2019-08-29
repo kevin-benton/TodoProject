@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:9001/health",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:9001/health",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "WebService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:9001/health",
+      "environmentVariables": {
+        "BENTON_UTILITY_SQL_CONNECTION_STRING": "Server=tcp:localhost,1433;Initial Catalog=utility;Persist Security Info=False;User ID=sa;Password=testPass1;MultipleActiveResultSets=False;Connection Timeout=30;",
+        "BENTON_UTILITY_PORT": "9001",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:9001/"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+BentonTodoNativeApp/build/
+BentonTodoNativeApp/*.pbxuser
+BentonTodoNativeApp/!default.pbxuser
+BentonTodoNativeApp/*.mode1v3
+BentonTodoNativeApp/!default.mode1v3
+BentonTodoNativeApp/*.mode2v3
+BentonTodoNativeApp/!default.mode2v3
+BentonTodoNativeApp/*.perspectivev3
+BentonTodoNativeApp/!default.perspectivev3
+BentonTodoNativeApp/xcuserdata
+BentonTodoNativeApp/*.xccheckout
+BentonTodoNativeApp/*.moved-aside
+BentonTodoNativeApp/DerivedData
+BentonTodoNativeApp/*.hmap
+BentonTodoNativeApp/*.ipa
+BentonTodoNativeApp/*.xcuserstate
+BentonTodoNativeApp/project.xcworkspace
+
+# Android/IntelliJ
+#
+BentonTodoNativeApp/build/
+BentonTodoNativeApp/.idea
+BentonTodoNativeApp/.gradle
+BentonTodoNativeApp/local.properties
+BentonTodoNativeApp/*.iml
+
+# node.js
+#
+BentonTodoNativeApp/node_modules/
+BentonTodoNativeApp/npm-debug.log
+BentonTodoNativeApp/yarn-error.log
+
+# BUCK
+BentonTodoNativeApp/buck-out/
+BentonTodoNativeApp/\.buckd/
+BentonTodoNativeApp/*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+BentonTodoNativeApp/*/fastlane/report.xml
+BentonTodoNativeApp/*/fastlane/Preview.html
+BentonTodoNativeApp/*/fastlane/screenshots
+
+# Bundle artifact
+BentonTodoNativeApp/*.jsbundle
+
+# CocoaPods
+BentonTodoNativeApp/ios/Pods/
+
+# All services build folders
+Services/**/**/out
+Services/**/**/*.userprefs
+Services/**/**/out
+Services/**/**/bin
+Services/**/**/obj
+Services/**/.vs
