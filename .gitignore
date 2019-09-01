@@ -58,6 +58,10 @@ BentonTodoNativeApp/*.jsbundle
 # CocoaPods
 BentonTodoNativeApp/ios/Pods/
 
+# Specific gateway files/folders
+Gateway/node_modules
+Gateway/out
+
 # All services build folders
 Services/**/**/out
 Services/**/**/*.userprefs

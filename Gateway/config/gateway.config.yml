@@ -1,0 +1,39 @@
+http:
+  port: 9000
+admin:
+  port: 9876
+  host: localhost
+apiEndpoints:
+  utility:
+    host: localhost
+    paths: "/api/utility/*"
+serviceEndpoints:
+  benton-utility:
+    url: "http://benton-utility:9001"
+policies:
+  - basic-auth
+  - cors
+  - expression
+  - key-auth
+  - log
+  - oauth2
+  - proxy
+  - rate-limit
+pipelines:
+  benton-utility:
+    apiEndpoints:
+      - utility
+    policies:
+      - log:
+          - action:
+              message: "Original Request: ${req.method} ${req.url}"
+      - expression:
+          - action:
+              jscode: "req.url = req.url.substring(12);"
+      - log:
+          - action:
+              message: "Utility Request: ${req.method} ${req.url}"
+      - proxy:
+          - action:
+              serviceEndpoint: benton-utility
+              changeOrigin: true
